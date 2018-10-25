@@ -1,1142 +1,1940 @@
-Started GET "/" for 127.0.0.1 at 2018-10-25 08:47:22 -0300
-Processing by Rails::WelcomeController#index as HTML
-  Rendering /home/yamada/.rvm/gems/ruby-2.5.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /home/yamada/.rvm/gems/ruby-2.5.3/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
-Completed 200 OK in 12ms (Views: 5.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2018-10-25 08:51:09 -0300
-Processing by PagesController#home as HTML
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (0.5ms)
-Completed 500 Internal Server Error in 696ms (ActiveRecord: 0.0ms)
-
-
+Started GET "/" for 127.0.0.1 at 2018-10-25 09:25:14 -0300
   
-ActionView::Template::Error (765: unexpected token at 'nodejs: /lib/x86_64-linux-gnu/libssl.so.1.0.0: no version information available (required by nodejs)
-nodejs: /lib/x86_64-linux-gnu/libssl.so.1.0.0: no version information available (required by nodejs)
-nodejs: /lib/x86_64-linux-gnu/libssl.so.1.0.0: no version information available (required by nodejs)
-nodejs: /lib/x86_64-linux-gnu/libcrypto.so.1.0.0: no version information available (required by nodejs)
-nodejs: /lib/x86_64-linux-gnu/libcrypto.so.1.0.0: no version information available (required by nodejs)
-["ok"]'):
-     5:     <%= csrf_meta_tags %>
-     6:     <%= csp_meta_tag %>
-     7: 
-     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    10:   </head>
-    11: 
-  
-app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__739001358200951352_47435532740080'
-Started GET "/" for 127.0.0.1 at 2018-10-25 08:52:15 -0300
-Processing by PagesController#home as HTML
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (0.8ms)
-Completed 500 Internal Server Error in 698ms (ActiveRecord: 0.0ms)
+ActiveRecord::PendingMigrationError (
 
+Migrations are pending. To resolve this issue, run:
 
+        bin/rails db:migrate RAILS_ENV=development
+
+):
   
-ActionView::Template::Error (765: unexpected token at 'nodejs: /lib/x86_64-linux-gnu/libssl.so.1.0.0: no version information available (required by nodejs)
-nodejs: /lib/x86_64-linux-gnu/libssl.so.1.0.0: no version information available (required by nodejs)
-nodejs: /lib/x86_64-linux-gnu/libssl.so.1.0.0: no version information available (required by nodejs)
-nodejs: /lib/x86_64-linux-gnu/libcrypto.so.1.0.0: no version information available (required by nodejs)
-nodejs: /lib/x86_64-linux-gnu/libcrypto.so.1.0.0: no version information available (required by nodejs)
-["ok"]'):
-     5:     <%= csrf_meta_tags %>
-     6:     <%= csp_meta_tag %>
-     7: 
-     8:     <!--<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>-->
-    10:   </head>
-    11: 
-  
-app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__2182054737176968146_47430962821600'
-Started GET "/home" for 127.0.0.1 at 2018-10-25 08:52:21 -0300
-  
-ActionController::RoutingError (No route matches [GET] "/home"):
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+activerecord (5.1.3) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.3) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.3) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
 sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-Started GET "/pages/home" for 127.0.0.1 at 2018-10-25 08:52:31 -0300
-Processing by PagesController#home as HTML
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (0.3ms)
-Completed 500 Internal Server Error in 542ms (ActiveRecord: 0.0ms)
-
-
-  
-ActionView::Template::Error (765: unexpected token at 'nodejs: /lib/x86_64-linux-gnu/libssl.so.1.0.0: no version information available (required by nodejs)
-nodejs: /lib/x86_64-linux-gnu/libssl.so.1.0.0: no version information available (required by nodejs)
-nodejs: /lib/x86_64-linux-gnu/libssl.so.1.0.0: no version information available (required by nodejs)
-nodejs: /lib/x86_64-linux-gnu/libcrypto.so.1.0.0: no version information available (required by nodejs)
-nodejs: /lib/x86_64-linux-gnu/libcrypto.so.1.0.0: no version information available (required by nodejs)
-["ok"]'):
-     5:     <%= csrf_meta_tags %>
-     6:     <%= csp_meta_tag %>
-     7: 
-     8:     <!--<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>-->
-    10:   </head>
-    11: 
-  
-app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__2182054737176968146_69916151127860'
-Started GET "/pages/home" for 127.0.0.1 at 2018-10-25 08:52:51 -0300
-Processing by PagesController#home as HTML
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (0.5ms)
-Completed 200 OK in 10ms (Views: 3.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/pages/home" for 127.0.0.1 at 2018-10-25 08:55:19 -0300
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (103.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (98.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePeople (20170921015625)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "phone" varchar, "age" integer, "gender" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170921015625"]]
+  [1m[35m (181.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateAdmins (20170921021253)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "admins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "adm_password" varchar, "person_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_53af473728"
+FOREIGN KEY ("person_id")
+  REFERENCES "people" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_person_id" ON "admins" ("person_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170921021253"]]
+  [1m[35m (95.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCoaches (20170921024153)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "coaches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "person_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_2597fd4f92"
+FOREIGN KEY ("person_id")
+  REFERENCES "people" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_coaches_on_person_id" ON "coaches" ("person_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170921024153"]]
+  [1m[35m (117.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateSpecialities (20170921025119)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "specialities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "coach_id" integer, "name_speciality" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_3c204a85b9"
+FOREIGN KEY ("coach_id")
+  REFERENCES "coaches" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_specialities_on_coach_id" ON "specialities" ("coach_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_specialities_on_coach_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_specialities_on_coach_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_specialities_on_coach_id_and_name_speciality" ON "specialities" ("coach_id", "name_speciality")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170921025119"]]
+  [1m[35m (93.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateWorkouts (20170922024252)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "coach_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_0312582f7b"
+FOREIGN KEY ("coach_id")
+  REFERENCES "coaches" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_workouts_on_coach_id" ON "workouts" ("coach_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170922024252"]]
+  [1m[35m (99.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateExercises (20170922025139)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "exercises" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name_exercise" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170922025139"]]
+  [1m[35m (109.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateWorkoutComposes (20170922025324)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "workout_composes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "set" integer, "repetition" integer, "technique" varchar, "exercise_id" integer, "workout_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_1bbeed8310"
+FOREIGN KEY ("exercise_id")
+  REFERENCES "exercises" ("id")
+, CONSTRAINT "fk_rails_12aaadd957"
+FOREIGN KEY ("workout_id")
+  REFERENCES "workouts" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_workout_composes_on_exercise_id" ON "workout_composes" ("exercise_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_exercise_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_exercise_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_workout_composes_on_workout_id" ON "workout_composes" ("workout_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_exercise_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_exercise_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_workout_composes_on_workout_id_and_exercise_id" ON "workout_composes" ("workout_id", "exercise_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170922025324"]]
+  [1m[35m (106.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsers (20170922030309)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "person_id" integer, "level" integer DEFAULT 0, "points" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_fa67535741"
+FOREIGN KEY ("person_id")
+  REFERENCES "people" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_person_id" ON "users" ("person_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170922030309"]]
+  [1m[35m (107.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUserDoWorkouts (20170922031001)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "user_do_workouts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "workout_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_415d59dda3"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_3f4c7502d0"
+FOREIGN KEY ("workout_id")
+  REFERENCES "workouts" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_do_workouts_on_user_id" ON "user_do_workouts" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_do_workouts_on_workout_id" ON "user_do_workouts" ("workout_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_user_do_workouts_on_user_id_and_workout_id" ON "user_do_workouts" ("user_id", "workout_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170922031001"]]
+  [1m[35m (106.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDiseases (20170922031252)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "diseases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name_disease" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170922031252"]]
+  [1m[35m (119.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateRestrictions (20170922031317)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "restrictions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name_restriction" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170922031317"]]
+  [1m[35m (119.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUserRestrictions (20170922031343)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "user_restrictions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "restriction_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_9b0c0ff1dc"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_ddecb44f39"
+FOREIGN KEY ("restriction_id")
+  REFERENCES "restrictions" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_restrictions_on_user_id" ON "user_restrictions" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_restrictions_on_restriction_id" ON "user_restrictions" ("restriction_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_restriction_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_restriction_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_user_restrictions_on_user_id_and_restriction_id" ON "user_restrictions" ("user_id", "restriction_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170922031343"]]
+  [1m[35m (124.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUserDiseases (20170922031351)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "user_diseases" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "disease_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_f6bf3d010c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_1e672ce107"
+FOREIGN KEY ("disease_id")
+  REFERENCES "diseases" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_diseases_on_user_id" ON "user_diseases" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_diseases_on_disease_id" ON "user_diseases" ("disease_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_disease_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_disease_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_user_diseases_on_user_id_and_disease_id" ON "user_diseases" ("user_id", "disease_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170922031351"]]
+  [1m[35m (117.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddAvatarToUsers (20171006121956)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "avatar" varchar DEFAULT 'profile/default.png'[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171006121956"]]
+  [1m[35m (90.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateFoods (20171007193349)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "foods" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name_food" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171007193349"]]
+  [1m[35m (104.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDiets (20171007193735)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "diets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" text, "coach_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_08a1bafdd1"
+FOREIGN KEY ("coach_id")
+  REFERENCES "coaches" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_diets_on_coach_id" ON "diets" ("coach_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171007193735"]]
+  [1m[35m (108.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDietComposes (20171007193806)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "diet_composes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "quantity" integer, "hour" time, "day" date, "food_id" integer, "diet_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_9e0732e711"
+FOREIGN KEY ("food_id")
+  REFERENCES "foods" ("id")
+, CONSTRAINT "fk_rails_b8e9c936db"
+FOREIGN KEY ("diet_id")
+  REFERENCES "diets" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_diet_composes_on_food_id" ON "diet_composes" ("food_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_food_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_food_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_diet_composes_on_diet_id" ON "diet_composes" ("diet_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_diet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_diet_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_food_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_food_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_diet_composes_on_diet_id_and_food_id" ON "diet_composes" ("diet_id", "food_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171007193806"]]
+  [1m[35m (105.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUserEatDiets (20171007194218)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "user_eat_diets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "exp_date" date, "finished" integer, "user_id" integer, "diet_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_ddb76718fe"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_5b8363a112"
+FOREIGN KEY ("diet_id")
+  REFERENCES "diets" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_eat_diets_on_user_id" ON "user_eat_diets" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_eat_diets_on_diet_id" ON "user_eat_diets" ("diet_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_diet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_diet_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_user_eat_diets_on_user_id_and_diet_id_and_exp_date" ON "user_eat_diets" ("user_id", "diet_id", "exp_date")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171007194218"]]
+  [1m[35m (106.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddNameToWorkouts (20171011120410)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "workouts" ADD "name" text[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171011120410"]]
+  [1m[35m (75.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddAvatarColumnToUsers (20171017125529)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "character" varchar DEFAULT 'characters/avatar1.png'[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171017125529"]]
+  [1m[35m (74.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUserRequests (20171030105104)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "user_requests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date" date, "option" integer, "status" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_de8c07e72e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_requests_on_user_id" ON "user_requests" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171030105104"]]
+  [1m[35m (107.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to DeviseCreatePeople (20171108122342)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "apeople" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar DEFAULT NULL, "email" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "age" integer DEFAULT NULL, "gender" varchar DEFAULT NULL, "password_digest" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "apeople" ("id","name","email","phone","age","gender","password_digest","created_at","updated_at")
+                     SELECT "id","name","email","phone","age","gender","password_digest","created_at","updated_at" FROM "people"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "people"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "people" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar DEFAULT NULL, "email" varchar DEFAULT NULL, "phone" varchar DEFAULT NULL, "age" integer DEFAULT NULL, "gender" varchar DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "people" ("id","name","email","phone","age","gender","created_at","updated_at")
+                     SELECT "id","name","email","phone","age","gender","created_at","updated_at" FROM "apeople"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "apeople"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "people" ADD "encrypted_password" varchar DEFAULT '' NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "people" ADD "reset_password_token" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "people" ADD "reset_password_sent_at" datetime[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "people" ADD "remember_created_at" datetime[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "people" ADD "sign_in_count" integer DEFAULT 0 NOT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "people" ADD "current_sign_in_at" datetime[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "people" ADD "last_sign_in_at" datetime[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "people" ADD "current_sign_in_ip" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "people" ADD "last_sign_in_ip" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_people_on_email" ON "people" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_people_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_people_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_people_on_reset_password_token" ON "people" ("reset_password_token")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171108122342"]]
+  [1m[35m (112.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUserMeasures (20171118200900)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "user_measures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "weight" float, "height" float, "neck" float, "chest" float, "leftbiceps" float, "rightbiceps" float, "waist" float, "hips" float, "leftthigh" float, "rightthigh" float, "leftcalve" float, "rightcalve" float, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_b4c8f401f3"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_user_measures_on_user_id" ON "user_measures" ("user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171118200900"]]
+  [1m[35m (107.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateConversations (20171119165218)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "conversations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "recipient_id" integer, "sender_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_conversations_on_recipient_id" ON "conversations" ("recipient_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_recipient_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_recipient_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_conversations_on_sender_id" ON "conversations" ("sender_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_sender_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_sender_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_recipient_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_recipient_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_conversations_on_recipient_id_and_sender_id" ON "conversations" ("recipient_id", "sender_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171119165218"]]
+  [1m[35m (106.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateMessages (20171119165244)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "messages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "body" text, "person_id" integer, "conversation_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_835d3e2df6"
+FOREIGN KEY ("person_id")
+  REFERENCES "people" ("id")
+, CONSTRAINT "fk_rails_7f927086d2"
+FOREIGN KEY ("conversation_id")
+  REFERENCES "conversations" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_messages_on_person_id" ON "messages" ("person_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_messages_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_messages_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_messages_on_conversation_id" ON "messages" ("conversation_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171119165244"]]
+  [1m[35m (107.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddEndedToUserDoWorkouts (20171121153802)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "user_do_workouts" ADD "ended" boolean[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171121153802"]]
+  [1m[35m (70.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddScoreToUserDoWorkouts (20171121153904)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "user_do_workouts" ADD "score" integer[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171121153904"]]
+  [1m[35m (85.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateFriendships (20171122214839)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "friendships" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "friend_id" integer, "accepted" boolean DEFAULT 'f', "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_friendships_on_user_id_and_friend_id" ON "friendships" ("user_id", "friend_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendships_on_user_id_and_friend_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendships_on_user_id_and_friend_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_friendships_on_friend_id_and_user_id" ON "friendships" ("friend_id", "user_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171122214839"]]
+  [1m[35m (122.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-10-25 12:25:28.214730"], ["updated_at", "2018-10-25 12:25:28.214730"]]
+  [1m[35m (57.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admins_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admins_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_coaches_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_coaches_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_recipient_id_and_sender_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_recipient_id_and_sender_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_sender_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_sender_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_recipient_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_recipient_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_diet_id_and_food_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_diet_id_and_food_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_diet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_diet_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_food_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_food_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diets_on_coach_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diets_on_coach_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendships_on_friend_id_and_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendships_on_friend_id_and_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendships_on_user_id_and_friend_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendships_on_user_id_and_friend_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_messages_on_conversation_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_messages_on_conversation_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_messages_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_messages_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_people_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_people_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_people_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_people_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_specialities_on_coach_id_and_name_speciality' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_specialities_on_coach_id_and_name_speciality' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_specialities_on_coach_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_specialities_on_coach_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_user_id_and_disease_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_user_id_and_disease_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_disease_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_disease_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_user_id_and_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_user_id_and_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_user_id_and_diet_id_and_exp_date' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_user_id_and_diet_id_and_exp_date' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_diet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_diet_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_measures_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_measures_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_requests_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_requests_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_user_id_and_restriction_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_user_id_and_restriction_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_restriction_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_restriction_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_workout_id_and_exercise_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_workout_id_and_exercise_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_exercise_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_exercise_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_coach_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_coach_id' AND type='index'
+[0m
+Started GET "/" for 127.0.0.1 at 2018-10-25 09:25:35 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by PagesController#home as HTML
   Rendering pages/home.html.erb within layouts/application
   Rendered pages/home.html.erb within layouts/application (1.5ms)
-Completed 200 OK in 14ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+Completed 500 Internal Server Error in 4617ms (ActiveRecord: 0.0ms)
 
 
-Started GET "/css/home.css" for 127.0.0.1 at 2018-10-25 08:55:19 -0300
-Started GET "/images/personal.jpg" for 127.0.0.1 at 2018-10-25 08:55:19 -0300
-Started GET "/images/qualidadevida.jpeg" for 127.0.0.1 at 2018-10-25 08:55:19 -0300
-Started GET "/images/statistic.png" for 127.0.0.1 at 2018-10-25 08:55:19 -0300
   
+ActionView::Template::Error (765: unexpected token at 'nodejs: /lib/x86_64-linux-gnu/libssl.so.1.0.0: no version information available (required by nodejs)
+nodejs: /lib/x86_64-linux-gnu/libssl.so.1.0.0: no version information available (required by nodejs)
+nodejs: /lib/x86_64-linux-gnu/libssl.so.1.0.0: no version information available (required by nodejs)
+nodejs: /lib/x86_64-linux-gnu/libcrypto.so.1.0.0: no version information available (required by nodejs)
+nodejs: /lib/x86_64-linux-gnu/libcrypto.so.1.0.0: no version information available (required by nodejs)
+["ok"]'):
+    3:   <head>
+    4:     <title>E-xercite</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    7:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    8:   </head>
+    9: 
   
-  
-  
-ActionController::RoutingError (No route matches [GET] "/css/home.css"):
-  
-ActionController::RoutingError (No route matches [GET] "/images/qualidadevida.jpeg"):
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-ActionController::RoutingError (No route matches [GET] "/images/statistic.png"):
-ActionController::RoutingError (No route matches [GET] "/images/personal.jpg"):
-  
-  
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-Started GET "/pages/home" for 127.0.0.1 at 2018-10-25 08:55:39 -0300
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__1904146423061944329_47206075691100'
+Started GET "/" for 127.0.0.1 at 2018-10-25 09:34:29 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by PagesController#home as HTML
   Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (0.7ms)
-Completed 200 OK in 12ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 4057ms (Views: 4044.4ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/pages/stylesheet/css/home.css" for 127.0.0.1 at 2018-10-25 08:55:39 -0300
-Started GET "/images/qualidadevida.jpeg" for 127.0.0.1 at 2018-10-25 08:55:39 -0300
-Started GET "/images/statistic.png" for 127.0.0.1 at 2018-10-25 08:55:39 -0300
-Started GET "/images/personal.jpg" for 127.0.0.1 at 2018-10-25 08:55:39 -0300
-  
-ActionController::RoutingError (No route matches [GET] "/pages/stylesheet/css/home.css"):
-  
-  
-  
-ActionController::RoutingError (No route matches [GET] "/images/statistic.png"):
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
-ActionController::RoutingError (No route matches [GET] "/images/personal.jpg"):
-ActionController::RoutingError (No route matches [GET] "/images/qualidadevida.jpeg"):
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-Started GET "/pages/home" for 127.0.0.1 at 2018-10-25 08:57:45 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 09:34:34 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:34:34 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:34:34 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:34:34 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 09:34:44 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:34:44 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:34:44 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:34:44 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 09:34:56 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:34:56 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:34:56 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:34:56 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 09:35:04 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:04 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:04 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:04 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 09:35:13 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:13 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:13 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:13 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 09:35:23 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:23 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:23 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:23 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 09:35:33 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:33 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:33 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:33 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 09:35:44 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:44 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:45 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:45 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 09:35:56 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:56 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:56 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:35:56 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 09:36:08 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:36:08 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:36:08 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:36:08 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 09:36:20 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:36:20 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:36:20 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:36:20 -0300
+Started GET "/" for 127.0.0.1 at 2018-10-25 09:42:59 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by PagesController#home as HTML
   Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (0.7ms)
-Completed 200 OK in 14ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 281ms (Views: 272.0ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/images/qualidadevida.jpeg" for 127.0.0.1 at 2018-10-25 08:57:45 -0300
-Started GET "/pages/stylesheet/css/home.css" for 127.0.0.1 at 2018-10-25 08:57:45 -0300
-Started GET "/images/personal.jpg" for 127.0.0.1 at 2018-10-25 08:57:45 -0300
-  
-ActionController::RoutingError (No route matches [GET] "/images/qualidadevida.jpeg"):
-  
-ActionController::RoutingError (No route matches [GET] "/pages/stylesheet/css/home.css"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/images/personal.jpg"):
-  
-Started GET "/images/statistic.png" for 127.0.0.1 at 2018-10-25 08:57:45 -0300
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
-ActionController::RoutingError (No route matches [GET] "/images/statistic.png"):
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-Started GET "/pages/home" for 127.0.0.1 at 2018-10-25 09:10:12 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 09:43:00 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:43:00 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:43:00 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 09:43:00 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admins_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admins_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_coaches_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_coaches_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_recipient_id_and_sender_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_recipient_id_and_sender_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_sender_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_sender_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_recipient_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_recipient_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_diet_id_and_food_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_diet_id_and_food_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_diet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_diet_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_food_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_food_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diets_on_coach_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diets_on_coach_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendships_on_friend_id_and_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendships_on_friend_id_and_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendships_on_user_id_and_friend_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendships_on_user_id_and_friend_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_messages_on_conversation_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_messages_on_conversation_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_messages_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_messages_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_people_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_people_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_people_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_people_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_specialities_on_coach_id_and_name_speciality' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_specialities_on_coach_id_and_name_speciality' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_specialities_on_coach_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_specialities_on_coach_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_user_id_and_disease_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_user_id_and_disease_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_disease_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_disease_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_user_id_and_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_user_id_and_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_user_id_and_diet_id_and_exp_date' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_user_id_and_diet_id_and_exp_date' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_diet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_diet_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_measures_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_measures_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_requests_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_requests_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_user_id_and_restriction_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_user_id_and_restriction_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_restriction_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_restriction_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_workout_id_and_exercise_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_workout_id_and_exercise_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_exercise_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_exercise_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_coach_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_coach_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admins_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admins_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_coaches_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_coaches_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_recipient_id_and_sender_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_recipient_id_and_sender_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_sender_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_sender_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_recipient_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_recipient_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_diet_id_and_food_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_diet_id_and_food_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_diet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_diet_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_food_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_food_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diets_on_coach_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diets_on_coach_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendships_on_friend_id_and_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendships_on_friend_id_and_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendships_on_user_id_and_friend_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendships_on_user_id_and_friend_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_messages_on_conversation_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_messages_on_conversation_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_messages_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_messages_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_people_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_people_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_people_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_people_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_specialities_on_coach_id_and_name_speciality' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_specialities_on_coach_id_and_name_speciality' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_specialities_on_coach_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_specialities_on_coach_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_user_id_and_disease_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_user_id_and_disease_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_disease_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_disease_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_user_id_and_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_user_id_and_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_user_id_and_diet_id_and_exp_date' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_user_id_and_diet_id_and_exp_date' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_diet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_diet_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_measures_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_measures_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_requests_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_requests_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_user_id_and_restriction_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_user_id_and_restriction_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_restriction_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_restriction_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_workout_id_and_exercise_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_workout_id_and_exercise_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_exercise_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_exercise_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_coach_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_coach_id' AND type='index'
+[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admins_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admins_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_coaches_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_coaches_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_recipient_id_and_sender_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_recipient_id_and_sender_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_sender_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_sender_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_conversations_on_recipient_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_conversations_on_recipient_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_diet_id_and_food_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_diet_id_and_food_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_diet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_diet_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diet_composes_on_food_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diet_composes_on_food_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_diets_on_coach_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_diets_on_coach_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendships_on_friend_id_and_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendships_on_friend_id_and_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_friendships_on_user_id_and_friend_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_friendships_on_user_id_and_friend_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_messages_on_conversation_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_messages_on_conversation_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_messages_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_messages_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_people_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_people_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_people_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_people_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_specialities_on_coach_id_and_name_speciality' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_specialities_on_coach_id_and_name_speciality' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_specialities_on_coach_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_specialities_on_coach_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_user_id_and_disease_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_user_id_and_disease_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_disease_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_disease_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_diseases_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_diseases_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_user_id_and_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_user_id_and_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_do_workouts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_do_workouts_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_user_id_and_diet_id_and_exp_date' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_user_id_and_diet_id_and_exp_date' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_diet_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_diet_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_eat_diets_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_eat_diets_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_measures_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_measures_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_requests_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_requests_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_user_id_and_restriction_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_user_id_and_restriction_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_restriction_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_restriction_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_user_restrictions_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_user_restrictions_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_person_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_person_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_workout_id_and_exercise_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_workout_id_and_exercise_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_workout_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_workout_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workout_composes_on_exercise_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workout_composes_on_exercise_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_workouts_on_coach_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_workouts_on_coach_id' AND type='index'
+[0m
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 10:03:02 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:02 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:02 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:02 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 10:03:07 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:08 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:08 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:08 -0300
+Started GET "/" for 127.0.0.1 at 2018-10-25 10:03:08 -0300
 Processing by PagesController#home as HTML
   Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (0.7ms)
-Completed 200 OK in 9ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (16.5ms)
+Completed 200 OK in 298ms (Views: 292.5ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/images/qualidadevida.jpeg" for 127.0.0.1 at 2018-10-25 09:10:12 -0300
-Started GET "/images/statistic.png" for 127.0.0.1 at 2018-10-25 09:10:12 -0300
-Started GET "/images/personal.jpg" for 127.0.0.1 at 2018-10-25 09:10:12 -0300
-  
-ActionController::RoutingError (No route matches [GET] "/images/personal.jpg"):
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
-Started GET "/images/starting.jpg" for 127.0.0.1 at 2018-10-25 09:10:12 -0300
-ActionController::RoutingError (No route matches [GET] "/images/qualidadevida.jpeg"):
-Started GET "/images/Maratona.jpg" for 127.0.0.1 at 2018-10-25 09:10:12 -0300
-  
-  
-ActionController::RoutingError (No route matches [GET] "/images/statistic.png"):
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-ActionController::RoutingError (No route matches [GET] "/images/starting.jpg"):
-  
-  
-ActionController::RoutingError (No route matches [GET] "/images/Maratona.jpg"):
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-Started GET "/pages/sobre" for 127.0.0.1 at 2018-10-25 09:10:21 -0300
-Processing by PagesController#sobre as HTML
-  Rendering pages/sobre.html.erb within layouts/application
-  Rendered pages/sobre.html.erb within layouts/application (0.6ms)
-Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 10:03:09 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:09 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:09 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:09 -0300
+Started GET "/people/sign_in" for 127.0.0.1 at 2018-10-25 10:03:10 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (57.6ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 147ms (Views: 145.4ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/images/bp.jpg" for 127.0.0.1 at 2018-10-25 09:10:21 -0300
-Started GET "/images/halter.jpg" for 127.0.0.1 at 2018-10-25 09:10:21 -0300
-  
-ActionController::RoutingError (No route matches [GET] "/images/halter.jpg"):
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
-ActionController::RoutingError (No route matches [GET] "/images/bp.jpg"):
-Started GET "/images/arlivre.jpg" for 127.0.0.1 at 2018-10-25 09:10:21 -0300
-Started GET "/images/a.jpg" for 127.0.0.1 at 2018-10-25 09:10:21 -0300
-Started GET "/images/t.jpeg" for 127.0.0.1 at 2018-10-25 09:10:21 -0300
-  
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
-  
-ActionController::RoutingError (No route matches [GET] "/images/a.jpg"):
-ActionController::RoutingError (No route matches [GET] "/images/t.jpeg"):
-  
-ActionController::RoutingError (No route matches [GET] "/images/arlivre.jpg"):
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-Started GET "/images/f.jpeg" for 127.0.0.1 at 2018-10-25 09:10:22 -0300
-  
-ActionController::RoutingError (No route matches [GET] "/images/f.jpeg"):
-Started GET "/images/fundoab.jpg" for 127.0.0.1 at 2018-10-25 09:10:22 -0300
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-  
-ActionController::RoutingError (No route matches [GET] "/images/fundoab.jpg"):
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-Started GET "/images/g.jpg" for 127.0.0.1 at 2018-10-25 09:10:22 -0300
-  
-ActionController::RoutingError (No route matches [GET] "/images/g.jpg"):
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-Started GET "/images/e.jpeg" for 127.0.0.1 at 2018-10-25 09:10:22 -0300
-  
-ActionController::RoutingError (No route matches [GET] "/images/e.jpeg"):
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-Started GET "/images/j.jpg" for 127.0.0.1 at 2018-10-25 09:10:22 -0300
-  
-ActionController::RoutingError (No route matches [GET] "/images/j.jpg"):
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-Started GET "/pages/treino" for 127.0.0.1 at 2018-10-25 09:10:26 -0300
-Processing by PagesController#treino as HTML
-  Rendering pages/treino.html.erb within layouts/application
-  Rendered pages/treino.html.erb within layouts/application (8.4ms)
-Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 10:03:18 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:18 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:18 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:18 -0300
+Started POST "/people/sign_in" for 127.0.0.1 at 2018-10-25 10:03:22 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hISjdJ2nvHUpNgpwBTDvQOrmvbjkCIyM3zkyoUF1RpqGS5crc18zVWTipwb6HYxG4eFcxth4S4aSmPhkxxqncQ==", "session"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? LIMIT ?[0m  [["email", "admin@admin.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 108ms (Views: 100.2ms | ActiveRecord: 1.2ms)
 
 
-  
-ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Exercise):
-     7: 
-     8:         <!--COMECO DA CRIACAO DA TABELA-->
-     9: 
-    10:         <!-- <% exercices = Exercise.first(3) %> -->
-    11:         <!-- <%= exercices[0] %> -->
-    12: 
-    13:         <table id="listaExercicios">
-  
-app/views/pages/treino.html.erb:10:in `_app_views_pages_treino_html_erb__3847570264120629125_69927637777080'
-Started GET "/pages/home" for 127.0.0.1 at 2018-10-25 09:15:21 -0300
-Processing by PagesController#home as HTML
-  Rendering pages/home.html.erb within layouts/application
-  Rendered pages/home.html.erb within layouts/application (0.7ms)
-Completed 200 OK in 19ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 10:03:22 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:22 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:22 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:22 -0300
+Started POST "/people/sign_in" for 127.0.0.1 at 2018-10-25 10:03:29 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bjl/nHUPJQGIKsoPUcJPGCEMfeouEbj4tgZOTl87rxXHHbaBQBOvypLaRMlkGyNvF16AtWBYZAaD+exkw2lAdw==", "session"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? LIMIT ?[0m  [["email", "admin@admin.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.1ms)
 
 
-Started GET "/images/starting.jpg" for 127.0.0.1 at 2018-10-25 09:15:21 -0300
-  
-ActionController::RoutingError (No route matches [GET] "/images/starting.jpg"):
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-Started GET "/images/Maratona.jpg" for 127.0.0.1 at 2018-10-25 09:15:21 -0300
-  
-ActionController::RoutingError (No route matches [GET] "/images/Maratona.jpg"):
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-Started GET "/pages/dobre" for 127.0.0.1 at 2018-10-25 09:15:39 -0300
-  
-ActionController::RoutingError (No route matches [GET] "/pages/dobre"):
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
-Started GET "/pages/sobre" for 127.0.0.1 at 2018-10-25 09:15:41 -0300
-Processing by PagesController#sobre as HTML
-  Rendering pages/sobre.html.erb within layouts/application
-  Rendered pages/sobre.html.erb within layouts/application (0.7ms)
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 10:03:29 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:29 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:29 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:29 -0300
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 10:03:38 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:38 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:38 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:38 -0300
+Started POST "/people/sign_in" for 127.0.0.1 at 2018-10-25 10:03:44 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"awdQuyta5oerSztjsVkCBuzTOXoPlQ7pvhSOyJRik4zCI5mmHkZsTLG7taWEgG5x2oHEJUHc0heL6yziCDB87g==", "session"=>{"email"=>"admin@admin.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? LIMIT ?[0m  [["email", "admin@admin.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.1ms)
 
 
-Started GET "/images/fundoab.jpg" for 127.0.0.1 at 2018-10-25 09:15:42 -0300
-  
-ActionController::RoutingError (No route matches [GET] "/images/fundoab.jpg"):
-  
-actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
-web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
-web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
-web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
-railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.5) lib/rack/method_override.rb:22:in `call'
-rack (2.0.5) lib/rack/runtime.rb:22:in `call'
-activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
-rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
-railties (5.2.1) lib/rails/engine.rb:524:in `call'
-puma (3.12.0) lib/puma/configuration.rb:225:in `call'
-puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
-puma (3.12.0) lib/puma/server.rb:472:in `process_client'
-puma (3.12.0) lib/puma/server.rb:332:in `block in run'
-puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/cable" for 127.0.0.1 at 2018-10-25 10:03:44 -0300
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:44 -0300
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:44 -0300
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-10-25 10:03:44 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]

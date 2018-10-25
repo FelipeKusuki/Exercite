@@ -1,0 +1,47 @@
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="active">
+                        <a href="#"><i class="fa fa-fw fa-dashboard"></i> Acompanhamento</a>
+                    </li>
+                    <li>
+                        <%= link_to "Meus dados", user_measures_show_path(user_id: current_user.id, id: current_user.id)  %>
+                    </li>
+                    <li>
+                        <%=link_to setting_person_user_path(person_id: current_user.person_id, id: current_user.id) do %>
+                             <i class="fa fa-fw fa-bar-chart-o"></i> Dados de cadastros
+                        <% end %> 
+                    <li>
+                        <%= link_to user_training_path(user_id: current_user.id, id: current_user.id) do %>
+                            <i class="fa fa-fw fa-table"></i> Treinos
+                        <% end %>   
+                    </li>
+                    <li>
+                        <%= link_to user_diet_menu_path(user_id: current_user.id, id: current_user.id) do %>
+                            <i class="fa fa-fw fa-table"></i> Dieta
+                        <% end %>   
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-trophy"></i> Conquistas</a>
+                    </li>
+
+                    <li>
+                        <%= link_to "Amizades", new_user_friendship_path(user_id: current_user.id) %>
+                    </li>
+
+                    <li>
+                        <%= link_to "Ranking", user_rankings_global_ranking_path(user_id: current_user.id) %>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
