@@ -1,0 +1,41 @@
+<link href="/css/exercicios.css" rel="stylesheet">
+
+    <!--CRIACAO DO CORPO -->
+
+    <div id="divLista">
+        </br></br></br>
+
+        <!--COMECO DA CRIACAO DA TABELA-->
+
+        <!-- <% exercices = Exercise.first(3) %> -->
+        <!-- <%= exercices[0] %> -->
+
+        <table id="listaExercicios">
+              <caption>LISTA DE EXERCICIOS</caption>
+              <tr>
+                <td>
+                    <h2>DIA 1 :</h2>
+                </td>
+                <td>
+                    <a href="flexao"><%= Exercise.find_by(name_exercise: 'Flexão').name_exercise %></a></br>
+                    <a href="squat"><%= Exercise.find_by(name_exercise: 'Squat').name_exercise%></a></br>
+                    <a href="burpee"><%= Exercise.find_by(name_exercise: 'Burpee').name_exercise %></a></br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>DIA 2 :</h2>
+                </td>
+                <td>
+                    LISTA 2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>DIA 3 :</h2>
+                </td>
+                <td>
+                    LISTA 3
+                </td>
+            </tr>
+    </div>
