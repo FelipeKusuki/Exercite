@@ -1,3 +1,6 @@
+# README
+Heroku Link: https://e-xercite.herokuapp.com/
+
 # Exercite
 Exercite é uma plataforma online para busca de exercícios que podem ser feitos em casa.
 
