@@ -16,20 +16,20 @@
                     <div class="col-lg-8">
                         <h3>Insira os dados da dieta</h3>
                         <%= simple_form_for [@coach, @diet], :html => {:class => 'form-basic' }  do |f| %>
-                            <%= f.input :name %>
+                            <%= f.input :name, label:'Nome' %>
                             <%= f.input :coach_id, :as => :hidden, :input_html => { :value => @coach.id } %>
                             <%= f.nested_fields_for :diet_composes do |ff| %>
                                     <%= ff.remove_nested_fields_link %>
                                     <br>
-                                    <%= ff.input :hour %>
-                                    <%= ff.input :day %>
-                                    <%= ff.input :food_id %>
-                                    <%= ff.input :quantity, label: 'Quantity in g/ml' %>
+                                    <%= ff.input :hour, label:'Hora' %>
+                                    <%= ff.input :day, label:'Dia' %>
+                                    <%= ff.input :food_id, label:'Alimento' %>
+                                    <%= ff.input :quantity, label: 'Quantidade' %>
                                     <%= ff.input :diet_id, :as => :hidden %>
                                 <% end %>
                             <%= f.add_nested_fields_link :diet_composes %>
                             <br><br>
-                            <%= f.button :submit %>
+                            <%= f.button :submit, label:'Enviar' %>
                         <% end %>
                         <br><br>
                     </div>

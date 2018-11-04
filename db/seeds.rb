@@ -17,14 +17,14 @@ person3 = Person.create!(name: "coach", email: "coach@coach.com",
 #Populando tabela Person
 person4 = Person.create!(name: "Roberto Silva", email: "roberto@email.com",
  	phone: "11986455823", age: 35, gender: "male", password: "roberto.silva", password_confirmation: "roberto.silva")
-person5 = Person.create!(name: "Guilherme Ramos", email: "guilherme@email.com",
-  phone: "11945685823", age: 21, gender: "male", password: "guilherme", password_confirmation: "guilherme")
-person6 = Person.create!(name: "Amanda Funabashi", email: "amanda@email.com",
-  phone: "11965489123", age: 65, gender: "female", password: "amanda.fu", password_confirmation: "amanda.fu")
+person5 = Person.create!(name: "Carlos Mota", email: "carlos@email.com",
+  phone: "11945685823", age: 21, gender: "male", password: "guilherme", password_confirmation: "carlos")
+person6 = Person.create!(name: "Sergio Alves", email: "sergioc@email.com",
+  phone: "11965489123", age: 65, gender: "female", password: "amanda.fu", password_confirmation: "sergio")
 person7 = Person.create!(name: "Barbara Bertho", email: "barbara@email.com",
   phone: "11985201473", age: 18, gender: "female", password: "barbara.ra", password_confirmation: "barbara.ra")
-person8 = Person.create!(name: "Julio Delgado", email: "julio@email.com",
-  phone: "11957954620", age: 33, gender: "male", password: "julioj", password_confirmation: "julioj")
+person8 = Person.create!(name: "João silva", email: "joao@email.com",
+  phone: "11957954620", age: 33, gender: "male", password: "julioj", password_confirmation: "joao")
 person9 = Person.create!(name: "Felipe Smith", email: "smith@email.com",
   phone: "11936987562", age: 50, gender: "male", password: "felipao", password_confirmation: "felipao")
 person10 = Person.create!(name: "William Boulos", email: "bigode@email.com",

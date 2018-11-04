@@ -13,7 +13,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Insira os dados da Comida <small>E-xercite</small>
+                            Cadastro de Alimento <small>E-xercite</small>
                         </h1>                           
                         
                     </div>
@@ -22,7 +22,7 @@
 					<div class="col-sm-1"></div>
 						<div class="col-lg-8">
 								<%= simple_form_for [@coach, @food], :html => {:class => 'form-basic' }  do |f| %>
-										<%= f.input :name_food %>
+										<%= f.input :name_food, label:'Nome do Alimento' %>
 										<%= f.button :submit,:id => "submit_bt" %>
 								<% end %>
 						</div>
