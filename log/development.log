@@ -7461,3 +7461,379 @@ DEPRECATION WARNING: The behavior of `attribute_changed?` inside of after callba
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
   [1m[36mDiet Load (0.0ms)[0m  [1m[34mSELECT  "diets".* FROM "diets" WHERE "diets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
   [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-11-07 09:41:45 -0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 2083ms (Views: 2075.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-11-07 09:41:49 -0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:41:49 -0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:41:49 -0200
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:41:49 -0200
+Started GET "/cable" for 127.0.0.1 at 2018-11-07 09:41:58 -0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:41:58 -0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:41:58 -0200
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:41:58 -0200
+Started GET "/cable" for 127.0.0.1 at 2018-11-07 09:42:07 -0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:42:07 -0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:42:07 -0200
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:42:07 -0200
+Started GET "/people/sign_in" for 127.0.0.1 at 2018-11-07 09:42:08 -0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (122.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 310ms (Views: 298.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/people/sign_in" for 127.0.0.1 at 2018-11-07 09:42:13 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WhoqeCg3iWQV1UDH+GvurEKL0d/M3cUUH5OI9+hHmMCvsqoS2herIMXa+Rh77ldmS960yW4g878NPaGcVH8Ccg==", "session"=>{"email"=>"roberto@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mPerson Load (1.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? LIMIT ?[0m  [["email", "roberto@email.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 309ms (Views: 97.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-11-07 09:42:14 -0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:42:14 -0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:42:14 -0200
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:42:14 -0200
+Started POST "/people/sign_in" for 127.0.0.1 at 2018-11-07 09:42:19 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pjT5V+7nLDVXWIbun1FWDJxR7NDtPNOyDkyA5lnBVTmNc+VrPndABCp9TzqtP6tcFblKhDKEfRuiCWRFjmdndw==", "session"=>{"email"=>"roberto@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."email" = ? LIMIT ?[0m  [["email", "roberto@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "people" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "people"."id" = ?[0m  [["current_sign_in_at", "2018-11-07 11:42:19.211150"], ["last_sign_in_at", "2018-11-07 11:42:19.211150"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2018-11-07 11:42:19.212091"], ["id", 4]]
+  [1m[35m (73.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."person_id" = ? LIMIT ?[0m  [["person_id", 4], ["LIMIT", 1]]
+  [1m[36mCoach Load (0.1ms)[0m  [1m[34mSELECT  "coaches".* FROM "coaches" WHERE "coaches"."person_id" = ? LIMIT ?[0m  [["person_id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/people/4/users/2
+Completed 302 Found in 362ms (ActiveRecord: 75.8ms)
+
+
+Started GET "/people/4/users/2" for 127.0.0.1 at 2018-11-07 09:42:19 -0200
+Processing by UsersController#show as HTML
+  Parameters: {"person_id"=>"4", "id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered uipages/_user_ui.html.erb (0.7ms)
+  Rendered users/show.html.erb within layouts/application (29.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."person_id" = ? LIMIT ?[0m  [["person_id", 4], ["LIMIT", 1]]
+  Rendered layouts/_ui_sidebar.html.erb (2.6ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_ui_header.html.erb (3.6ms)
+Completed 200 OK in 168ms (Views: 115.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-11-07 09:42:19 -0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:42:19 -0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZW5naW5lZXJpbmctYXBwL1BlcnNvbi80)
+ConversationChannel is transmitting the subscription confirmation
+ConversationChannel is streaming from conversations-4
+Started GET "/people/4/users/2" for 127.0.0.1 at 2018-11-07 09:44:30 -0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"person_id"=>"4", "id"=>"2"}
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered uipages/_user_ui.html.erb (0.7ms)
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."person_id" = ? LIMIT ?[0m  [["person_id", 4], ["LIMIT", 1]]
+  Rendered layouts/_ui_sidebar.html.erb (1.0ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_ui_header.html.erb (1.9ms)
+Completed 200 OK in 379ms (Views: 288.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-11-07 09:44:30 -0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:44:30 -0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZW5naW5lZXJpbmctYXBwL1BlcnNvbi80)
+ConversationChannel is transmitting the subscription confirmation
+ConversationChannel is streaming from conversations-4
+Started GET "/users/2/friendships/new" for 127.0.0.1 at 2018-11-07 09:44:33 -0200
+Processing by FriendshipsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering friendships/new.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."person_id" = ? LIMIT ?[0m  [["person_id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (16.9ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = ? AND "friendships"."accepted" = ?[0m  [["user_id", 2], ["accepted", "t"]]
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."user_id" WHERE "friendships"."friend_id" = ? AND "friendships"."accepted" = ?[0m  [["friend_id", 2], ["accepted", "t"]]
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFriendship Load (0.2ms)[0m  [1m[34mSELECT "friendships".* FROM "friendships" WHERE ((friend_id = 1 AND user_id = 2) OR (friend_id = 2 AND user_id = 1))[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = ? AND "friendships"."accepted" = ?[0m  [["user_id", 2], ["accepted", "f"]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."user_id" WHERE "friendships"."friend_id" = ? AND "friendships"."accepted" = ?[0m  [["friend_id", 2], ["accepted", "f"]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE ("users"."id" != ?)[0m  [["id", 2]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 1 AND user_id = 2) OR (friend_id = 2 AND user_id = 1)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 3 AND user_id = 2) OR (friend_id = 2 AND user_id = 3)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.6ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 4 AND user_id = 2) OR (friend_id = 2 AND user_id = 4)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 5 AND user_id = 2) OR (friend_id = 2 AND user_id = 5)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (3.8ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 6 AND user_id = 2) OR (friend_id = 2 AND user_id = 6)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 7 AND user_id = 2) OR (friend_id = 2 AND user_id = 7)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 8 AND user_id = 2) OR (friend_id = 2 AND user_id = 8)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 9 AND user_id = 2) OR (friend_id = 2 AND user_id = 9)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 10 AND user_id = 2) OR (friend_id = 2 AND user_id = 10)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 11 AND user_id = 2) OR (friend_id = 2 AND user_id = 11)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 12 AND user_id = 2) OR (friend_id = 2 AND user_id = 12)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 13 AND user_id = 2) OR (friend_id = 2 AND user_id = 13)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 14 AND user_id = 2) OR (friend_id = 2 AND user_id = 14)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 15 AND user_id = 2) OR (friend_id = 2 AND user_id = 15)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 16 AND user_id = 2) OR (friend_id = 2 AND user_id = 16)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered friendships/new.html.erb within layouts/application (207.4ms)
+  Rendered layouts/_ui_sidebar.html.erb (1.0ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_ui_header.html.erb (2.1ms)
+Completed 200 OK in 301ms (Views: 254.0ms | ActiveRecord: 38.4ms)
+
+
+Started GET "/users/2/friendships/new" for 127.0.0.1 at 2018-11-07 09:44:35 -0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FriendshipsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mPerson Load (0.9ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering friendships/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."person_id" = ? LIMIT ?[0m  [["person_id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = ? AND "friendships"."accepted" = ?[0m  [["user_id", 2], ["accepted", "t"]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."user_id" WHERE "friendships"."friend_id" = ? AND "friendships"."accepted" = ?[0m  [["friend_id", 2], ["accepted", "t"]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFriendship Load (0.1ms)[0m  [1m[34mSELECT "friendships".* FROM "friendships" WHERE ((friend_id = 1 AND user_id = 2) OR (friend_id = 2 AND user_id = 1))[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = ? AND "friendships"."accepted" = ?[0m  [["user_id", 2], ["accepted", "f"]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."user_id" WHERE "friendships"."friend_id" = ? AND "friendships"."accepted" = ?[0m  [["friend_id", 2], ["accepted", "f"]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE ("users"."id" != ?)[0m  [["id", 2]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 1 AND user_id = 2) OR (friend_id = 2 AND user_id = 1)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 3 AND user_id = 2) OR (friend_id = 2 AND user_id = 3)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 4 AND user_id = 2) OR (friend_id = 2 AND user_id = 4)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 5 AND user_id = 2) OR (friend_id = 2 AND user_id = 5)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 6 AND user_id = 2) OR (friend_id = 2 AND user_id = 6)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 7 AND user_id = 2) OR (friend_id = 2 AND user_id = 7)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 8 AND user_id = 2) OR (friend_id = 2 AND user_id = 8)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 9 AND user_id = 2) OR (friend_id = 2 AND user_id = 9)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 10 AND user_id = 2) OR (friend_id = 2 AND user_id = 10)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 11 AND user_id = 2) OR (friend_id = 2 AND user_id = 11)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 12 AND user_id = 2) OR (friend_id = 2 AND user_id = 12)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 13 AND user_id = 2) OR (friend_id = 2 AND user_id = 13)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 14 AND user_id = 2) OR (friend_id = 2 AND user_id = 14)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 15 AND user_id = 2) OR (friend_id = 2 AND user_id = 15)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 16 AND user_id = 2) OR (friend_id = 2 AND user_id = 16)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered friendships/new.html.erb within layouts/application (125.0ms)
+  Rendered layouts/_ui_sidebar.html.erb (1.0ms)
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_ui_header.html.erb (1.9ms)
+Completed 200 OK in 411ms (Views: 365.7ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/users/2/friendships/new" for 127.0.0.1 at 2018-11-07 09:44:52 -0200
+Processing by FriendshipsController#new as HTML
+  Parameters: {"user_id"=>"2"}
+  [1m[36mPerson Load (0.5ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering friendships/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."person_id" = ? LIMIT ?[0m  [["person_id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = ? AND "friendships"."accepted" = ?[0m  [["user_id", 2], ["accepted", "t"]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."user_id" WHERE "friendships"."friend_id" = ? AND "friendships"."accepted" = ?[0m  [["friend_id", 2], ["accepted", "t"]]
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFriendship Load (0.2ms)[0m  [1m[34mSELECT "friendships".* FROM "friendships" WHERE ((friend_id = 1 AND user_id = 2) OR (friend_id = 2 AND user_id = 1))[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."friend_id" WHERE "friendships"."user_id" = ? AND "friendships"."accepted" = ?[0m  [["user_id", 2], ["accepted", "f"]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "friendships" ON "users"."id" = "friendships"."user_id" WHERE "friendships"."friend_id" = ? AND "friendships"."accepted" = ?[0m  [["friend_id", 2], ["accepted", "f"]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE ("users"."id" != ?)[0m  [["id", 2]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 1 AND user_id = 2) OR (friend_id = 2 AND user_id = 1)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mFriendship Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 3 AND user_id = 2) OR (friend_id = 2 AND user_id = 3)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.4ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 4 AND user_id = 2) OR (friend_id = 2 AND user_id = 4)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 5 AND user_id = 2) OR (friend_id = 2 AND user_id = 5)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 6 AND user_id = 2) OR (friend_id = 2 AND user_id = 6)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 7 AND user_id = 2) OR (friend_id = 2 AND user_id = 7)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 8 AND user_id = 2) OR (friend_id = 2 AND user_id = 8)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 9 AND user_id = 2) OR (friend_id = 2 AND user_id = 9)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 10 AND user_id = 2) OR (friend_id = 2 AND user_id = 10)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 11 AND user_id = 2) OR (friend_id = 2 AND user_id = 11)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 12 AND user_id = 2) OR (friend_id = 2 AND user_id = 12)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 13 AND user_id = 2) OR (friend_id = 2 AND user_id = 13)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 14 AND user_id = 2) OR (friend_id = 2 AND user_id = 14)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 15 AND user_id = 2) OR (friend_id = 2 AND user_id = 15)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mFriendship Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "friendships" WHERE ((friend_id = 16 AND user_id = 2) OR (friend_id = 2 AND user_id = 16)) LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendered friendships/new.html.erb within layouts/application (57.6ms)
+  Rendered layouts/_ui_sidebar.html.erb (1.1ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_ui_header.html.erb (2.2ms)
+Completed 200 OK in 168ms (Views: 156.6ms | ActiveRecord: 8.2ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:44:53 -0200
+ConversationChannel stopped streaming from conversations-4
+Started GET "/cable" for 127.0.0.1 at 2018-11-07 09:44:53 -0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:44:53 -0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mPerson Load (0.3ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Registered connection (Z2lkOi8vZW5naW5lZXJpbmctYXBwL1BlcnNvbi80)
+ConversationChannel is transmitting the subscription confirmation
+ConversationChannel is streaming from conversations-4
+Started GET "/people/4/users/2/setting" for 127.0.0.1 at 2018-11-07 09:45:49 -0200
+Processing by UsersController#setting as HTML
+  Parameters: {"person_id"=>"4", "id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/setting.html.erb within layouts/application
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  [1m[36mDisease Load (0.1ms)[0m  [1m[34mSELECT "diseases".* FROM "diseases" INNER JOIN "user_diseases" ON "diseases"."id" = "user_diseases"."disease_id" WHERE "user_diseases"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mRestriction Load (0.1ms)[0m  [1m[34mSELECT "restrictions".* FROM "restrictions" INNER JOIN "user_restrictions" ON "restrictions"."id" = "user_restrictions"."restriction_id" WHERE "user_restrictions"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered users/setting.html.erb within layouts/application (203.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."person_id" = ? LIMIT ?[0m  [["person_id", 4], ["LIMIT", 1]]
+  Rendered layouts/_ui_sidebar.html.erb (0.9ms)
+  [1m[36mCACHE Person Load (0.0ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_ui_header.html.erb (1.6ms)
+Completed 200 OK in 261ms (Views: 254.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/people/4/users/2/setting" for 127.0.0.1 at 2018-11-07 09:45:52 -0200
+Processing by UsersController#setting as HTML
+  Parameters: {"person_id"=>"4", "id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering users/setting.html.erb within layouts/application
+  [1m[36mPerson Load (0.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  [1m[36mDisease Load (0.1ms)[0m  [1m[34mSELECT "diseases".* FROM "diseases" INNER JOIN "user_diseases" ON "diseases"."id" = "user_diseases"."disease_id" WHERE "user_diseases"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[36mRestriction Load (0.1ms)[0m  [1m[34mSELECT "restrictions".* FROM "restrictions" INNER JOIN "user_restrictions" ON "restrictions"."id" = "user_restrictions"."restriction_id" WHERE "user_restrictions"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered users/setting.html.erb within layouts/application (18.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."person_id" = ? LIMIT ?[0m  [["person_id", 4], ["LIMIT", 1]]
+  Rendered layouts/_ui_sidebar.html.erb (0.9ms)
+  [1m[36mCACHE Person Load (0.0ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_ui_header.html.erb (1.5ms)
+Completed 200 OK in 82ms (Views: 78.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/2/diet_menu/2" for 127.0.0.1 at 2018-11-07 09:48:16 -0200
+Processing by DietMenuController#show as HTML
+  Parameters: {"user_id"=>"2", "id"=>"2"}
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUserEatDiet Load (0.2ms)[0m  [1m[34mSELECT "user_eat_diets".* FROM "user_eat_diets" WHERE (user_id = 2 and finished = 0 and exp_date >= '2018-11-07 11:48:16.747381')[0m
+  Rendering diet_menu/show.html.erb within layouts/application
+  [1m[36mUserEatDiet Load (0.2ms)[0m  [1m[34mSELECT "user_eat_diets".* FROM "user_eat_diets" WHERE (user_id = 2 and (finished <> 0 or exp_date < '2018-11-07 11:48:16.748831'))[0m
+  Rendered diet_menu/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."person_id" = ? LIMIT ?[0m  [["person_id", 4], ["LIMIT", 1]]
+  Rendered layouts/_ui_sidebar.html.erb (0.9ms)
+  [1m[36mPerson Load (0.2ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered layouts/_ui_header.html.erb (1.7ms)
+Completed 200 OK in 60ms (Views: 51.8ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/people/sign_out" for 127.0.0.1 at 2018-11-07 09:48:49 -0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5PZHrfu8walPUC1pUZOM5rHgjlFBzfivXmMv3oqQQOTPsVuRKyytmDJ15L1j/XG2OAgoBZ51VgbyJst9XTZyqg=="}
+  [1m[36mPerson Load (1.1ms)[0m  [1m[34mSELECT  "people".* FROM "people" WHERE "people"."id" = ? ORDER BY "people"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-07 09:48:49 -0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:48:49 -0200
+ConversationChannel stopped streaming from conversations-4
+Started GET "/cable" for 127.0.0.1 at 2018-11-07 09:48:49 -0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:48:49 -0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:48:49 -0200
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:48:49 -0200
+Started GET "/people/sign_in" for 127.0.0.1 at 2018-11-07 09:48:50 -0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 81ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2018-11-07 09:48:59 -0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:48:59 -0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:48:59 -0200
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:48:59 -0200
+Started GET "/cable" for 127.0.0.1 at 2018-11-07 09:49:11 -0200
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:49:11 -0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:49:11 -0200
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2018-11-07 09:49:11 -0200
