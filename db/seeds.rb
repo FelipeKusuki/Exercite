@@ -18,13 +18,13 @@ person3 = Person.create!(name: "coach", email: "coach@coach.com",
 person4 = Person.create!(name: "Roberto Silva", email: "roberto@email.com",
  	phone: "11986455823", age: 35, gender: "male", password: "roberto.silva", password_confirmation: "roberto.silva")
 person5 = Person.create!(name: "Carlos Mota", email: "carlos@email.com",
-  phone: "11945685823", age: 21, gender: "male", password: "guilherme", password_confirmation: "carlos")
+  phone: "11945685823", age: 21, gender: "male", password: "123456", password_confirmation: "123456")
 person6 = Person.create!(name: "Sergio Alves", email: "sergioc@email.com",
-  phone: "11965489123", age: 65, gender: "female", password: "amanda.fu", password_confirmation: "sergio")
+  phone: "11965489123", age: 65, gender: "female", password: "123456", password_confirmation: "123456")
 person7 = Person.create!(name: "Barbara Bertho", email: "barbara@email.com",
   phone: "11985201473", age: 18, gender: "female", password: "barbara.ra", password_confirmation: "barbara.ra")
 person8 = Person.create!(name: "João silva", email: "joao@email.com",
-  phone: "11957954620", age: 33, gender: "male", password: "julioj", password_confirmation: "joao")
+  phone: "11957954620", age: 33, gender: "male", password: "123456", password_confirmation: "123456")
 person9 = Person.create!(name: "Felipe Smith", email: "smith@email.com",
   phone: "11936987562", age: 50, gender: "male", password: "felipao", password_confirmation: "felipao")
 person10 = Person.create!(name: "William Boulos", email: "bigode@email.com",
@@ -173,59 +173,3 @@ UserDoWorkout.create(user_id: user12.id, workout_id: workout4.id, ended: false, 
 UserDoWorkout.create(user_id: user11.id, workout_id: workout5.id, ended: false, score: 0)
 UserDoWorkout.create(user_id: user9.id, workout_id: workout2.id, ended: false, score: 0)
 UserDoWorkout.create(user_id: user8.id, workout_id: workout5.id, ended: false, score: 0)
-
-
-#Populando tabela Food
-food1 = Food.create(name_food: "Carne")
-food2 = Food.create(name_food: "Frango")
-food3 = Food.create(name_food: "Batata Doce")
-food4 = Food.create(name_food: "Maçã")
-food5 = Food.create(name_food: "Banana")
-food6 = Food.create(name_food: "Costela suína")
-food7 = Food.create(name_food: "Costela bovina")
-food8 = Food.create(name_food: "Alface")
-food9 = Food.create(name_food: "Tomate")
-food10 = Food.create(name_food: "Escarola")
-food11 = Food.create(name_food: "Peito de peru")
-food12 = Food.create(name_food: "Queijo branco")
-food13 = Food.create(name_food: "Pepino")
-food14 = Food.create(name_food: "Rúcula")
-food15 = Food.create(name_food: "Queijo mussarela")
-food16 = Food.create(name_food: "PVT")
-food17 = Food.create(name_food: "Frango grelhado")
-food18 = Food.create(name_food: "Picanha")
-food19 = Food.create(name_food: "Laranja")
-food20 = Food.create(name_food: "Uva")
-food21 = Food.create(name_food: "Agrião")
-food22 = Food.create(name_food: "Berinjela")
-food22 = Food.create(name_food: "Repolho")
-food23 = Food.create(name_food: "Pizza de pepperoni")
-food24 = Food.create(name_food: "Bolo de fubá")
-food25 = Food.create(name_food: "Nozes")
-food26 = Food.create(name_food: "Castanha de caju")
-food27 = Food.create(name_food: "Salada César")
-food28 = Food.create(name_food: "Arroz")
-food29 = Food.create(name_food: "Feijão")
-food30 = Food.create(name_food: "Macarrão integral")
-food31 = Food.create(name_food: "Ovo cozido")
-
-#Populando tabela Diet
-diet1 = Diet.create(name: "Perda de peso 1", coach_id: coach.id)
-diet2 = Diet.create(name: "Ganho de massa 1", coach_id: coach2.id)
-diet3 = Diet.create(name: "Selíaca 1", coach_id: coach2.id)
-diet4 = Diet.create(name: "Perda de peso 2", coach_id: coach3.id)
-diet5 = Diet.create(name: "Redução de colesterol", coach_id: coach3.id)
-diet6 = Diet.create(name: "Ganho de massa 2", coach_id: coach3.id)
-
-#Populando tabela DietCompose
-DietCompose.create(quantity:'100' , hour:'10:00' , day: '20171019' ,food_id: food1.id, diet_id: diet1.id)
-DietCompose.create(quantity:'100' , hour:'10:00' , day: '20171019' ,food_id: food3.id, diet_id: diet1.id)
-DietCompose.create(quantity:'150' , hour:'15:00' , day: '20171029' ,food_id: food2.id, diet_id: diet2.id)
-DietCompose.create(quantity:'75' , hour:'22:00' , day: '20171027' ,food_id: food31.id, diet_id: diet6.id)
-DietCompose.create(quantity:'89' , hour:'18:00' , day: '20171225' ,food_id: food17.id, diet_id: diet3.id)
-DietCompose.create(quantity:'230' , hour:'07:00' , day: '20171103' ,food_id: food14.id, diet_id: diet4.id)
-DietCompose.create(quantity:'400' , hour:'11:00' , day: '20171118' ,food_id: food9.id, diet_id: diet5.id)
-DietCompose.create(quantity:'55' , hour:'09:30' , day: '20171105' ,food_id: food23.id, diet_id: diet6.id)
-
-UserEatDiet.create(user_id: user.id, diet_id: diet1.id, exp_date: '20181030', finished: 0)
-UserEatDiet.create(user_id: user.id, diet_id: diet2.id, exp_date: '20181010', finished: 1)
